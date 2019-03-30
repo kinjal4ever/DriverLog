@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css">
+
+</head>
+<body>
+<div data-role="page" id="add-detail">
+    <div data-role="header">
+        <a data-role="button" onclick="ClearDriverLogData();">Clear</a>
+        <h1 id='header-detail'></h1>
+        <a data-role="button" onclick="ShowLogDetail();">Show logs</a>
+    </div>
+    <div data-role="content">
+        <label for="driver-id">Driver:</label>
+        <input  data-clear-btn="true" type="text" name="Driver-Driver" id="txtDriver" value=""/>
+        <label for="driver-weight">Rego:</label>
+        <input data-clear-btn="true" type="text" name="Driver-Rego" step="0.01" id="txtRego" value=""/>
+        <label for="driver-height">Start:</label>
+        <input  data-clear-btn="true" type="text" name="Driver-Start" step="0.01" id="txtStart" value=""/>
+        <label for="driver-condition">First:</label>
+        <input  data-clear-btn="true" type="text" name="Driver-First" id="txtFirst" value=""/>
+        <label for="driver-age">Second:</label>
+        <input  data-clear-btn="true" type="text" name="Driver-Second" id="txtSecond" value=""/>
+        <label for="driver-age">End:</label>
+        <input  data-clear-btn="true" type="text" name="Driver-End" id="txtEnd" value=""/>
+    </div>
+    </ul>
+    <div data-role="footer">
+        <a data-role="button" onclick="DriverLogger.GoBack()">Previous</a>
+        <a data-role="button" onclick="return SaveDriverDetail();">Save</a>
+        <a data-role="button" onclick="window.location.href='DriverLogs.html'" >Home</a>
+        <!--<a data-role="button" onclick="DriverLogger.GoNext()">Next</a>-->
+    </div>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/DB.js"></script>
+<script src="js/AppLib.js"></script>
+<script src="js/AddDetail.js"></script>
+</body>
+</html>

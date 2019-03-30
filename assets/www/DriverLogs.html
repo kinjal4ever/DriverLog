@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+
+</head>
+<body>
+<div data-role="page" id="cowList">
+    <div data-role="header">
+        <h1>Driver Logger</h1>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li><a onclick="return RedirectPage('Car')">Car</a></li>
+            <li><a onclick="return RedirectPage('Truck-5T')">Truck-5T</a></li>
+            <li><a onclick="return RedirectPage('Truck-10T')">Truck-10T</a></li>
+            <li><a onclick="return RedirectPage('Tipper')">Tipper</a></li>
+            <li><a onclick="return RedirectPage('Articulated')">Articulated</a></li>
+        </ul>
+    </div>
+    <div data-role="footer">
+        <h1>&copy; CQUniversity, R. Balsys. 2017</h1>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/DriverLogs.js"></script>
+</body>
+</html>
